@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.in6k.domain">
+	<class name="EmployeeModel" table="EMPLOYEES">
+    <id column="ID" name="id" type="java.lang.Integer">
+      <generator class="increment"/>
+    </id>
+
+        <!--<set name="name" table="NAME" lazy="false">
+            <key>
+                <column name="NAME" not-null="true" />
+            </key>
+            <many-to-one class="com.in6k.domain.TeamLiderModel"/>
+        </set>-->
+
+    <!--<many-to-one name="name" class="com.in6k.domain.TeamLiderModel" column="NAME"/>-->
+
+    <property column="NAME" name="name" type="java.lang.String"/>
+    <property column="LAST_NAME" name="lastName" type="java.lang.String"/>
+    <property column="EMAIL" name="email" type="java.lang.String"/>
+    <property column="PASSWORD" name="password" type="java.lang.String"/>
+    <property column="BIRTH_DATE" name="birthDate" type="java.lang.String"/>
+  </class>
+</hibernate-mapping>

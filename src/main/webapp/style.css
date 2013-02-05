@@ -1,0 +1,29 @@
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border none;
+}
+
+th {
+	background-color: #000;
+	color:#fff;
+}
+
+tr:nth-of-type(even) {
+	background-color: #F3F3F3;
+}
+
+tr:nth-of-type(add) {
+	background-color: #ddd;
+}
+
+td:last-child{
+	border-left: 1px dotted;
+}
+
+#error {
+	color: red;
+}
+
